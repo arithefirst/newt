@@ -37,7 +37,7 @@ Setting up Newt couldn't be simpler, just follow the steps below!
 
 ## Getting a Local Copy
 
-Before anything else, you need a copy of Newt on your computer. Make sure that you have [Git](https://git-scm.com/) and [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (or an NPM compatible package manager) installed and a GitHub account, then follow the steps below.
+Before anything else, you need a copy of Newt on your computer. Make sure that you have [Git](https://docs.github.com/en/get-started/git-basics/set-up-git) and [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (or an NPM compatible package manager) installed and your GitHub account linked to git, then follow the steps below.
 
 1. Fork the repo by scrolling to the top of this page and clicking the `Fork` button.
 2. In new page that shows up, click the `Create fork` button.
@@ -47,6 +47,7 @@ Before anything else, you need a copy of Newt on your computer. Make sure that y
 
    ```bash
    git clone URL
+   cd newt
    ```
 
    where `URL` is the URL you copied in step 4. This will download all of the code locally.
