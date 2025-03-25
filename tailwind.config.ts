@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss';
-import siteConfig from './config';
+import siteConfig from './src/lib';
 
 const config: Config = {
   content: ['./src/**/*.{html,js,svelte,ts}'],

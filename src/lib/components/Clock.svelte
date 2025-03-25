@@ -1,5 +1,5 @@
 <script lang="ts">
-  import config from '@config';
+  import config from '$lib';
   import { onMount, onDestroy } from 'svelte';
 
   let date = $state(getDate());

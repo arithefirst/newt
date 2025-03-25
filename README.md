@@ -29,11 +29,12 @@ Setting up Newt couldn't be simpler, just follow the steps below!
 
 <!-- no toc -->
 
-1. [Get a local copy](#getting-a-local-copy)
-2. [Customize](#customizing)
-3. [Deploy your site](#deploying)
-4. [Set it as your newtab page](#set-newt-as-your-newtab)
-5. Enojy!
+- [Welcome to Newt!](#welcome-to-newt)
+- [Getting started](#getting-started)
+  - [Getting a Local Copy](#getting-a-local-copy)
+  - [Customizing](#customizing)
+  - [Deploying](#deploying)
+  - [Set Newt as your newtab](#set-newt-as-your-newtab)
 
 ## Getting a Local Copy
 
@@ -65,7 +66,7 @@ Before anything else, you need a copy of Newt on your computer. Make sure that y
 > [!TIP]
 > Before you start customizing, to see your changes real-time you should run `npm run dev`, and then visit `http://localhost:4321` in your browser.
 
-Newt's behavior is controlled by `config.ts`. Below is an overview of each section you can modify:
+Newt's behavior is controlled by `src/lib/index.ts`. Below is an overview of each section you can modify:
 
 - **name:** Set your name for the greetings.
 - **locale:** Language and regional settings for date/time.

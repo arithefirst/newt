@@ -44,6 +44,7 @@ type TWeather = {
 };
 
 type TConfig = {
+  baseURL: string;
   buttons: TButton;
   colors: TColors;
   dateFormat: Intl.DateTimeFormatOptions;
