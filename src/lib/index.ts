@@ -3,7 +3,6 @@ const config: TConfig = {
   name: 'April',
   locale: 'en',
   midgap: 24, // Gap between buttons and the time/weather (in Tailwind size units)
-  baseURL: '/newt', // Only change this if not hosting on GH pages
   colors: {
     baseBg: '#1E1E2E',
     darkBg: '#181825',

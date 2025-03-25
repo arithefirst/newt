@@ -4,11 +4,12 @@
   import Clock from '$lib/components/Clock.svelte';
   import Weather from '$lib/components/Weather.svelte';
   import Buttons from '$lib/components/Buttons.svelte';
+  import { PUBLIC_BASE_URL } from '$env/static/public';
 
   const gradientBase: string = config.colors.baseBg + 'FF';
   const gradientEnd: string = config.colors.baseBg + '00';
   const src = config.image.src ?? '';
-  const imageSrc = `url(${src.match(/^https?:\/\//) ? src : `${config.baseURL}/${src}`})`;
+  const imageSrc = `url(${src.match(/^https?:\/\//) ? src : `${PUBLIC_BASE_URL === '/' ? '' : PUBLIC_BASE_URL}/${src}`})`;
   const { data } = $props();
 
   function getGreeter() {
@@ -27,7 +28,7 @@
 
 <svelte:head>
   <title>Newt</title>
-  <link rel="icon" type="image/svg+xml" href={`${config.baseURL}/favicon.svg`} />
+  <link rel="icon" type="image/svg+xml" href={`${PUBLIC_BASE_URL === '/' ? '' : PUBLIC_BASE_URL}/favicon.svg`} />
 </svelte:head>
 
 <main
