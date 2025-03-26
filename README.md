@@ -35,22 +35,9 @@ Setting up Newt couldn't be simpler, just follow the steps below!
 
 ## Setting up your Deployment
 
-> [!IMPORTANT]
-> For weather to work, you must get an OpenWeatherMap API Key from https://openweathermap.org/api/one-call-3#start, and complete the following steps **before** deploying:
->
-> - From your terminal, run the below command to copy the example enviroment file to a the real one
->
->   ```bash
->   cp .env.example .env
->   ```
->
-> - Open the file called `.env`
-> - Paste the API Key you recived from OpenWeatherMap in place of `yourkeyhere`
-> - Save the file
+To deploy Newt to a website, we're going to use Vercel for the sake of price and simplicity. When prompted, please enter your OpenWeatherMap API Key into the box to get weather working.
 
-To deploy Newt to a website, we're going to use Vercel for the sake of price and simplicity.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Farithefirst%2Fnewt)
+[![Deploy with Vercel](https://vercel.com/button)](<https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Farithefirst%2Fnewt&env=PRIVATE_WEATHER_API_KEY&envDescription=OpenWeatherMap%20API%20Key%20(Can%20be%20obtained%20for%20free%20from%20https%3A%2F%2Fopenweathermap.org%2Fapi%2Fone-call-3%23start).&project-name=newt&repository-name=newt>)
 
 When you set your repository name in the creation dialog, please make sure you remember it, as you will need it later. Make sure to keep track of the project URL as well.
 
