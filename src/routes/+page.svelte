@@ -8,8 +8,6 @@
 
   const gradientBase: string = config.colors.baseBg + 'FF';
   const gradientEnd: string = config.colors.baseBg + '00';
-  const src = config.image.src ?? '';
-  const imageSrc = `url(${src.match(/^https?:\/\//) ? src : `${PUBLIC_BASE_URL === '/' ? '' : PUBLIC_BASE_URL}/${src}`})`;
   const { data } = $props();
 
   function getGreeter() {
@@ -28,14 +26,13 @@
 
 <svelte:head>
   <title>Newt</title>
-  <link rel="icon" type="image/svg+xml" href={`${PUBLIC_BASE_URL === '/' ? '' : PUBLIC_BASE_URL}/favicon.svg`} />
 </svelte:head>
 
 <main
   class="bg-base text-primarytext gap-config m-0 flex h-screen w-screen flex-col items-center justify-center
 	{config.image.enabled ? 'bg-image' : ''}"
   style={config.image.enabled
-    ? `--gb:${gradientBase};--ge:${gradientEnd};--i:${imageSrc};--gap:${config.midgap / 4}rem;`
+    ? `--gb:${gradientBase};--ge:${gradientEnd};--i:url(${config.image.src});--gap:${config.midgap / 4}rem;`
     : `--gap:${config.midgap / 4}rem;`}
 >
   <div class="flex gap-64">

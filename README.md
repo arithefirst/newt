@@ -120,27 +120,21 @@ Newt's behavior is controlled by `src/lib/index.ts`. Below is an overview of eac
   - `units`: Metric (`C°`), Imperial (`F°`), or Standard (`K`).
 
 > [!IMPORTANT]
-> For weather to work, you must get an OpenWeatherMap API Key from https://openweathermap.org/api/one-call-3#start, and complete the following steps:
+> For weather to work, you must get an OpenWeatherMap API Key from https://openweathermap.org/api/one-call-3#start, and complete the following steps before deploying:
 >
-> - Go to the settings tab of your fork
-> - Click on "Secrets and variables" and then "Actions" in the menu that appears under it
-> - Click "New Repository Secret"
-> - Set the name to be `WEATHER_API_KEY`
-> - Set the secret to be the API Key you got from OpenWeatherMap
-> - Click "New Secret"
+> - From your terminal, run the below command to copy the example enviroment file to a the real one
 >
-> If you are still reciving the error that says "Weather API key not configured", you may need to click on `Actions > Deploy to GitHub Pages > Run Workflow` (in the top bar) to re-build newt.
+>   ```bash
+>   cp .env.example .env
+>   ```
+>
+> - Paste the API Key you recived from OpenWeatherMap in place of `yourkeyhere`
 
 ## Deploying
 
-To deploy Newt to a website, we're going to use GitHub pages for the sake of simplicity.
+To deploy Newt to a website, we're going to use Vercel for the sake of price and simplicity. Please remember to follow the step at the bottom of the [Customizing](#customizing) section if you want weather to work properly.
 
-1. Click the "Actions" button in the bar at the top
-2. Click the "I understand my workdlows" button
-3. Open the repository’s "Settings" tab.
-4. In the "Pages" section, set "Source" to "GitHub Actions"
-5. Go back to your CLI, and run `git commit -am "Update config"`, and then `git push` to send your changes to the remote repo.
-6. Visit the provided GitHub Pages URL to see your deployed site. Unless you named your fork something other than "newt", your url should be `https://[yourusername].github.io/newt`, where `[yourusername]` is your github username.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Farithefirst%2Fnewt)
 
 ## Set Newt as your newtab
 
