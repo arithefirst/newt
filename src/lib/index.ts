@@ -62,7 +62,7 @@ const config: TConfig = {
   // Config for an optional background image
   image: {
     enabled: true,
-    src: 'background-image.png',
+    src: '/background-image.png',
   },
 
   // The greetings that get displayed
