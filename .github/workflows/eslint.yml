@@ -1,0 +1,14 @@
+name: ESLint
+on: [push]
+jobs:
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    steps:
+      # Installs bun
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+
+      # Install deps and run eslint
+      - run: bun install
+      - run: bun lint
