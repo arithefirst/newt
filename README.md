@@ -1,11 +1,11 @@
 <p align="center">
-    <img src="./public/favicon.svg" height="64">
+    <img src="./static/favicon.svg" height="64">
 </p>
 <h1 align="center">Newt</h1>
 
 <p align="center">A simple and friendly custom new tab page</p>
 
-![alt text](./README_DEPS/image.png)
+![Newt example photo](./README_DEPS/image.png)
 
 <p align="center">
     <img src="https://github.com/arithefirst/newt/actions/workflows/prettier.yml/badge.svg" href="https://github.com/arithefirst/newt/actions/workflows/prettier.yml">
@@ -29,31 +29,45 @@ Setting up Newt couldn't be simpler, just follow the steps below!
 
 <!-- no toc -->
 
-- [Welcome to Newt!](#welcome-to-newt)
-- [Getting started](#getting-started)
-  - [Getting a Local Copy](#getting-a-local-copy)
-  - [Customizing](#customizing)
-  - [Deploying](#deploying)
-  - [Set Newt as your newtab](#set-newt-as-your-newtab)
+- [Set up your Deployment](#setting-up-your-deployment)
+- [Get a Local Copy](#getting-a-local-copy)
+- [Customize](#customizing)
+- [Set Newt as your newtab](#set-newt-as-your-newtab)
+
+## Setting up your Deployment
+
+> [!IMPORTANT]
+> For weather to work, you must get an OpenWeatherMap API Key from https://openweathermap.org/api/one-call-3#start, and complete the following steps **before** deploying:
+>
+> - From your terminal, run the below command to copy the example enviroment file to a the real one
+>
+>   ```bash
+>   cp .env.example .env
+>   ```
+>
+> - Open the file called `.env`
+> - Paste the API Key you recived from OpenWeatherMap in place of `yourkeyhere`
+> - Save the file
+
+To deploy Newt to a website, we're going to use Vercel for the sake of price and simplicity.
+When you set your repository name in the creation dialog, please make sure you remember it, as you will need it later.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Farithefirst%2Fnewt)
 
 ## Getting a Local Copy
 
-Before anything else, you need a copy of Newt on your computer. Make sure that you have [Git](https://docs.github.com/en/get-started/git-basics/set-up-git) and [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (or an NPM compatible package manager) installed and your GitHub account linked to git, then follow the steps below.
+To be able to customize your instance, you will need a copy on your computer. Make sure that you have [Git](https://docs.github.com/en/get-started/git-basics/set-up-git) and [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (or an NPM compatible package manager) installed and your GitHub account linked to git, then follow the steps below.
 
-1. Fork the repo by scrolling to the top of this page and clicking the `Fork` button.
-2. In new page that shows up, click the `Create fork` button.
-3. Once everything finishes loading, click the green `Code` button at the top of the page.
-4. Copy the URL that appears.
-5. From your command line, run the following:
+1. From your command line, run the following:
 
    ```bash
-   git clone URL
+   git clone github.com/USERNAME/REPO
    cd newt
    ```
 
-   where `URL` is the URL you copied in step 4. This will download all of the code locally.
+   where `USERNAME` is the your GitHub username, and `REPO` is the repo name you set in [Setting up your Deployment](#setting-up-your-deployment). This will download all of the code locally.
 
-6. From your command line, run the following:
+2. From your command line, run the following:
 
    ```bash
    npm install
@@ -64,7 +78,7 @@ Before anything else, you need a copy of Newt on your computer. Make sure that y
 ## Customizing
 
 > [!TIP]
-> Before you start customizing, to see your changes real-time you should run `npm run dev`, and then visit `http://localhost:4321` in your browser.
+> Before you start customizing, to see your changes real-time you should run `npm run dev`, and then visit `http://localhost:5173` in your browser.
 
 Newt's behavior is controlled by `src/lib/index.ts`. Below is an overview of each section you can modify:
 
@@ -118,23 +132,6 @@ Newt's behavior is controlled by `src/lib/index.ts`. Below is an overview of eac
 
   - `coordinates`: Your latitude/longitude.
   - `units`: Metric (`C°`), Imperial (`F°`), or Standard (`K`).
-
-> [!IMPORTANT]
-> For weather to work, you must get an OpenWeatherMap API Key from https://openweathermap.org/api/one-call-3#start, and complete the following steps before deploying:
->
-> - From your terminal, run the below command to copy the example enviroment file to a the real one
->
->   ```bash
->   cp .env.example .env
->   ```
->
-> - Paste the API Key you recived from OpenWeatherMap in place of `yourkeyhere`
-
-## Deploying
-
-To deploy Newt to a website, we're going to use Vercel for the sake of price and simplicity. Please remember to follow the step at the bottom of the [Customizing](#customizing) section if you want weather to work properly.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Farithefirst%2Fnewt)
 
 ## Set Newt as your newtab
 
