@@ -28,7 +28,6 @@ Get started by reading the guide below!
 Setting up Newt couldn't be simpler, just follow the steps below!
 
 <!-- no toc -->
-
 - [Set up your Deployment](#setting-up-your-deployment)
 - [Get a Local Copy](#getting-a-local-copy)
 - [Customize](#customizing)
@@ -50,9 +49,10 @@ Setting up Newt couldn't be simpler, just follow the steps below!
 > - Save the file
 
 To deploy Newt to a website, we're going to use Vercel for the sake of price and simplicity.
-When you set your repository name in the creation dialog, please make sure you remember it, as you will need it later.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Farithefirst%2Fnewt)
+
+When you set your repository name in the creation dialog, please make sure you remember it, as you will need it later. Make sure to keep track of the project URL as well.
 
 ## Getting a Local Copy
 
@@ -135,7 +135,7 @@ Newt's behavior is controlled by `src/lib/index.ts`. Below is an overview of eac
 
 ## Set Newt as your newtab
 
-There aren't any browsers I know of that natively let you set a custom newtab page, so here are the extensions/plugins that I use for the two big browser engines.
+There aren't any browsers I know of that natively let you set a custom newtab page, so here are the extensions/plugins that I use for the two big browser engines. You should set the URL you got from Vercel for everything to work properly.
 
 - **Chrome:** [Custom New Tab](https://chromewebstore.google.com/detail/custom-new-tab/lfjnnkckddkopjfgmbcpdiolnmfobflj?hl=en-US) by dicanote.co
 - **Firefox:** [Custom New Tab Page](https://addons.mozilla.org/en-US/firefox/addon/custom-new-tab-page/) by MethodGrab
