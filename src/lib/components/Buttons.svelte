@@ -12,7 +12,7 @@
 
 <div class="gap-config flex flex-col" style="--gap:{config.buttons.gap / 4}rem;">
   <div class="gap-config flex justify-center">
-    {#each bconfig.buttons.slice(0, 6) as button}
+    {#each bconfig.buttons.slice(0, 6) as button (button.name)}
       <a
         class="bg-dark hover:bg-accent flex h-35 w-45 items-center justify-center rounded-md p-4 shadow-xl transition-all duration-200 ease-in-out hover:-translate-y-[3px] hover:text-base"
         href={button.href}
@@ -27,7 +27,7 @@
 
   {#if bconfig.buttons[6]}
     <div class="gap-config flex justify-center">
-      {#each bconfig.buttons.slice(6, 12) as button}
+      {#each bconfig.buttons.slice(6, 12) as button (button.name)}
         <a
           class="bg-dark hover:bg-accent flex h-35 w-45 items-center justify-center rounded-md p-4 shadow-xl transition-all duration-200 ease-in-out hover:-translate-y-[3px] hover:text-base"
           href={button.href}

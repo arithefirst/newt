@@ -28,6 +28,7 @@ Get started by reading the guide below!
 Setting up Newt couldn't be simpler, just follow the steps below!
 
 <!-- no toc -->
+
 - [Set up your Deployment](#setting-up-your-deployment)
 - [Get a Local Copy](#getting-a-local-copy)
 - [Customize](#customizing)
