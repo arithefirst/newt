@@ -4,7 +4,6 @@
   import Clock from '$lib/components/Clock.svelte';
   import Weather from '$lib/components/Weather.svelte';
   import Buttons from '$lib/components/Buttons.svelte';
-  import { PUBLIC_BASE_URL } from '$env/static/public';
 
   const gradientBase: string = config.colors.baseBg + 'FF';
   const gradientEnd: string = config.colors.baseBg + '00';
